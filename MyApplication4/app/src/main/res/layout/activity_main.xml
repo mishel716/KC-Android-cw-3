@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="95dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="first number" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="365dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="second number" />
+
+    <Button
+        android:id="@+id/p"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-140dp"
+        android:text="calculate" />
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/p"
+        android:layout_alignEnd="@+id/p"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="311dp"
+        android:shadowColor="#F1D5D5"
+        android:text="calculater"
+        android:textColor="#0C0101"
+        android:textColorHighlight="#ECECEC"
+        android:textColorHint="#872020"
+        android:textSize="34sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/p"
+        android:layout_alignBottom="@+id/p"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="-138dp"
+        android:text="Total"
+        android:textSize="60sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
